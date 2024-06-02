@@ -1,0 +1,24 @@
+### 1. Create profile (ADMIN)
+POST http://localhost:8080/profile/create
+Content-Type: application/json
+
+{
+  "name": "Ali",
+  "surname": "Aliyev",
+  "email": "urinovshokirjon93@gmail.com",
+  "phone": "998941785150",
+  "password": "123",
+  "status": "ACTIVE",
+  "role": "ROLE_ADMIN"
+}
+
+### 2. Update Profile (ADMIN)
+PUT http://localhost:8080/profile/update/1
+Content-Type: application/json
+
+{
+  "name": "Alish",
+  "surname": "Alishev",
+  "status": "ACTIVE",
+  "role": "ROLE_ADMIN"
+}
